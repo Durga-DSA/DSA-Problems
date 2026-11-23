@@ -6,13 +6,13 @@ class Solution {
         for(int i=0; i<k; i++){
             windowSum += nums[i];
         }
-        double max_avg = windowSum;
+        long max_avg = windowSum;
         
         for(int i=k; i<nums.length; i++){
             windowSum = windowSum + nums[i] - nums[i-k];
             max_avg = Math.max(max_avg, windowSum);
         }
 
-        return max_avg/k;
+        return (double)max_avg/k;
     }
 }
