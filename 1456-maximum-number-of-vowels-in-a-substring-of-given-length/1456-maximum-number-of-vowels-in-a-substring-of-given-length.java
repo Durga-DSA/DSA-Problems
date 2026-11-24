@@ -20,7 +20,7 @@ class Solution {
 
             max_count = Math.max(max_count, count);
 
-            if (max_count == k) return k;
+            //if (max_count == k) return k;
 
         }
         
